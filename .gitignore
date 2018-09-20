@@ -1,6 +1,8 @@
 # package directories
 node_modules/
 .sonarlint/
+# module dynamo local
+dynamodb/dynamodb-local
 # Serverless directories
 .serverless/
 .dynamodb
