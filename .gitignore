@@ -11,3 +11,4 @@ dynamodb/dynamodb-local
 .env
 # tests
 coverage/
+dynamodb/shared-local-instance.db
