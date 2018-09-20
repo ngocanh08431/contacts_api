@@ -3,8 +3,9 @@ provider:
   name: aws
   runtime: nodejs8.10
   stage: dev
-  region: us-west-2
-
+  key: ${file(./config/envVars.js):getEnvVars.key}
+  secret: ${file(./config/envVars.js):getEnvVars.secret}
+  region: ${file(./config/envVars.js):getEnvVars.region}
 functions:
   - '${file(src/handlers/contacts/contacts.serverless.yml)}'
 
