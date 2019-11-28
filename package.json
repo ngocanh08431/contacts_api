@@ -8,16 +8,18 @@
     "sls": "serverless",
     "seed": "node ./seed/runner.js",
     "start": "sls offline start",
-    "deploy" : "sls deploy"
+    "deploy": "sls deploy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "dom-parser": "^0.1.6"
+  },
   "devDependencies": {
-    "aws-sdk": "^2.316.0",
-    "dotenv": "^6.0.0",
-    "jest": "^23.6.0",
-    "serverless-offline": "^3.25.12"
+    "aws-sdk": "^2.580.0",
+    "dotenv": "^6.2.0",
+    "jest": "^24.9.0",
+    "serverless-offline": "^3.33.0"
   }
 }

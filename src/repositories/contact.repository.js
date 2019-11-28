@@ -11,6 +11,7 @@ class ContactRepository {
 
     async list() {
         const params = this._createParamObject();
+        console.log(this._documentClient);
         const response = await this._documentClient.scan(params).promise();
 
         return response.Items || [];

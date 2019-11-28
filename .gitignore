@@ -12,3 +12,4 @@ dynamodb/dynamodb-local
 # tests
 coverage/
 dynamodb/shared-local-instance.db
+package-lock.json

@@ -22,13 +22,13 @@ const seedContacts = async () => {
 
     const exists = await contactSeeder.hasTable();
 
-    if (exists) {
-        log(`Table 'contacts' exists, deleting`);
-        await contactSeeder.deleteTable();
-    }
+    // if (exists) {
+    //     log(`Table 'contacts' exists, deleting`);
+    //     await contactSeeder.deleteTable();
+    // }
 
-    log(`Creating 'contacts' table`);
-    await contactSeeder.createTable();
+    // log(`Creating 'contacts' table`);
+    // await contactSeeder.createTable();
 
     log('Seeding data');
     await contactSeeder.seed(contactsData);
